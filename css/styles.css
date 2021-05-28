@@ -1,7 +1,6 @@
 html,
 body {
     max-width: 100%;
-    overflow-x: hidden;
     margin: 0;
     line-height: 1.6em;
     font-family: Arial, sans-serif;
@@ -10,7 +9,7 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding-top: 10px;
     font-size: 13px;
 }
 
@@ -21,6 +20,9 @@ body {
 
 .left-nav {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .right-nav {
@@ -31,7 +33,7 @@ body {
 }
 
 .nav-wrapper .left-nav div {
-    margin-right: 20px;
+    margin: 0 0 0 20px;
 }
 
 .nav-wrapper .right-nav div {
@@ -39,11 +41,23 @@ body {
 }
 
 .nav-link {
-    height: 22px;
+    height: 24px;
 }
 
 .nav-link:hover {
     text-decoration: underline;
+}
+
+#apps-icon {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 8px 8px;
+}
+
+#apps-icon:hover {
+    background: #f2f2f2;
+    border-radius: 50%;
+    padding: 8px 8px;
 }
 
 #sign-in-button {
@@ -66,6 +80,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 233px;
+    padding: 47px 0 0 0;
+    margin-top: 40px;
 }
 
 #logo-img {
@@ -82,6 +98,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: -40px 0 0 0;
 }
 
 #search-bar {
@@ -119,11 +136,13 @@ span {
     order: 0;
     padding: 0;
     margin-left: 20px;
+    opacity: 0.7;
 }
 
 #mic {
     order: 2;
     margin-right: 20px;
+    opacity: 0.7;
 }
 
 #search-buttons {
@@ -169,13 +188,13 @@ footer {
 
 .footer {
     border-top: 1px solid #dfe1e5;
-    line-height: 40px;
+    height: 40px;
     min-width: 980px;
     position: absolute;
     width: 100%;
-    bottom: 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 14px;
     bottom: 0;
     left: 0;
@@ -198,12 +217,8 @@ footer {
 
 .right-footer {
     display: flex;
-    margin-right: 100px;
+    margin-right: 30px;
 }
-
-.footer .left-footer div {}
-
-.footer .right-footer div {}
 
 .footer-link {
     height: 22px;
